@@ -1,0 +1,47 @@
+ executable = /research/hzhuo2/gem5_test/gem5/build/X86/gem5_LT.opt
+arguments =  --outdir=/research/hzhuo2/gem5_test/gem5/m5out/Atomic/wordpress/oss/dbcache_fp_body_plus_dbms/ --stats-file=stats_o3.txt --dump-config=config_o3.ini configs/example/fs.py --caches --l2cache --l1i_size=32kB --l1i_assoc=4 --kernel=/research/hzhuo2/diskimg/vmlinux_working --disk-image=/research/hzhuo2/diskimg/CentOS-x86_64_w_wp.img --script=/research/hzhuo2/gem5_test/gem5/configs/full_system/dibakar_boot/wp_dbcache_fp_body_plus_dbms.rcS --cpu-type=DerivO3CPU -r 8
+initialdir = /research/hzhuo2/gem5_test/gem5/
+output = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/wordpress/oss/dbcache_fp_body_plus_dbms/condor_o3_out
+error = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/wordpress/oss/dbcache_fp_body_plus_dbms/condor_o3_err
+log = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/wordpress/oss/dbcache_fp_body_plus_dbms/condor_o3_log
+Rank=TARGET.Mips
+universe = vanilla
+getenv = true
+Requirements = (regexp("opteron-5.*", Machine)==FALSE)
+queue
+
+executable = /research/hzhuo2/gem5_test/gem5/build/X86/gem5_LT.opt
+arguments =  --outdir=/research/hzhuo2/gem5_test/gem5/m5out/Atomic/wordpress/oss/dbcache_p5_body_plus_dbms/ --stats-file=stats_o3.txt --dump-config=config_o3.ini configs/example/fs.py --caches --l2cache --l1i_size=32kB --l1i_assoc=4 --kernel=/research/hzhuo2/diskimg/vmlinux_working --disk-image=/research/hzhuo2/diskimg/CentOS-x86_64_w_wp.img --script=/research/hzhuo2/gem5_test/gem5/configs/full_system/dibakar_boot/wp_dbcache_p5_body_plus_dbms.rcS --cpu-type=DerivO3CPU -r 8
+initialdir = /research/hzhuo2/gem5_test/gem5/
+output = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/wordpress/oss/dbcache_p5_body_plus_dbms/condor_o3_out_2
+error = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/wordpress/oss/dbcache_p5_body_plus_dbms/condor_o3_err_2
+log = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/wordpress/oss/dbcache_p5_body_plus_dbms/condor_o3_log_2
+Rank=TARGET.Mips
+universe = vanilla
+getenv = true
+Requirements = (regexp("opteron-5.*", Machine)==FALSE)
+queue
+
+executable = /research/hzhuo2/gem5_test/gem5/build/X86/gem5_LT.opt
+arguments =  --outdir=/research/hzhuo2/gem5_test/gem5/m5out/Atomic/wordpress/oss/dbcache_p7_body_plus_dbms/ --stats-file=stats_o3.txt --dump-config=config_o3.ini configs/example/fs.py --caches --l2cache --l1i_size=32kB --l1i_assoc=4 --kernel=/research/hzhuo2/diskimg/vmlinux_working --disk-image=/research/hzhuo2/diskimg/CentOS-x86_64_w_wp.img --script=/research/hzhuo2/gem5_test/gem5/configs/full_system/dibakar_boot/wp_dbcache_p7_body_plus_dbms.rcS --cpu-type=DerivO3CPU -r 8
+initialdir = /research/hzhuo2/gem5_test/gem5/
+output = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/wordpress/oss/dbcache_p7_body_plus_dbms/condor_o3_out_2
+error = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/wordpress/oss/dbcache_p7_body_plus_dbms/condor_o3_err_2
+log = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/wordpress/oss/dbcache_p7_body_plus_dbms/condor_o3_log_2
+Rank=TARGET.Mips
+universe = vanilla
+getenv = true
+Requirements = (regexp("opteron-5.*", Machine)==FALSE)
+queue
+
+executable = /research/hzhuo2/gem5_test/gem5/build/X86/gem5_LT.opt
+arguments =  --outdir=/research/hzhuo2/gem5_test/gem5/m5out/Atomic/wordpress/oss/dbcache_p11_body_plus_dbms/ --stats-file=stats_o3.txt --dump-config=config_o3.ini configs/example/fs.py --caches --l2cache --l1i_size=32kB --l1i_assoc=4 --kernel=/research/hzhuo2/diskimg/vmlinux_working --disk-image=/research/hzhuo2/diskimg/CentOS-x86_64_w_wp.img --script=/research/hzhuo2/gem5_test/gem5/configs/full_system/dibakar_boot/wp_dbcache_p11_body_plus_dbms.rcS --cpu-type=DerivO3CPU -r 8
+initialdir = /research/hzhuo2/gem5_test/gem5/
+output = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/wordpress/oss/dbcache_p11_body_plus_dbms/condor_o3_out_2
+error = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/wordpress/oss/dbcache_p11_body_plus_dbms/condor_o3_err_2
+log = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/wordpress/oss/dbcache_p11_body_plus_dbms/condor_o3_log_2
+Rank=TARGET.Mips
+universe = vanilla
+getenv = true
+Requirements = (regexp("opteron-5.*", Machine)==FALSE)
+queue

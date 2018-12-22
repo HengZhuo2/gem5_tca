@@ -1,0 +1,29 @@
+
+echo "Starting Simulation :D"
+
+/sbin/m5 dumpstats
+/sbin/m5 resetstats
+
+echo "Reset stats Done."
+
+/work/workloads/spec_cpu2006/benchspec/CPU2006/462.libquantum/src/empty_main
+
+echo "empty_main Done."
+echo "Starting objdump hhvm :D"
+
+
+service mysqld start
+
+cd /work/workloads/drupal-7.31/
+objdump -D /work/dev/hhvm/hphp/hhvm/hhvm
+
+echo "Done objdump hhvm :D"
+service mysqld stop
+
+/sbin/m5 dumpstats
+/sbin/m5 resetstats
+
+echo "Final Reset done."
+
+/sbin/m5 exit
+/sbin/m5 exit

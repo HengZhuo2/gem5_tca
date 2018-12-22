@@ -1,0 +1,49 @@
+executable = /research/hzhuo2/gem5_test/gem5/build/X86/gem5_LT.opt
+arguments = --outdir=m5out/sparse/8x8/LT/ configs/example/se.py --cpu-type=DerivO3CPU --caches --l2cache --l1i_size=4MB --mem-size=8GB --cpu-clock=2GHz --sys-clock=2GHz -c tests/tca/sparse/blocksparse_accl_func8x8
+initialdir = /research/hzhuo2/gem5_test/gem5/
+output = /research/hzhuo2/gem5_test/gem5/m5out/sparse/8x8/LT/condor_out_sparse2
+error = /research/hzhuo2/gem5_test/gem5/m5out/sparse/8x8/LT/condor_err
+log = /research/hzhuo2/gem5_test/gem5/m5out/sparse/8x8/LT/condor_log
+Rank=TARGET.Mips
+universe = vanilla
+getenv = true
+Requirements = (regexp("opteron-5.*", Machine)==FALSE)
+queue
+
+executable = /research/hzhuo2/gem5_test/gem5/build/X86/gem5_NLT.opt
+arguments = --outdir=m5out/sparse/8x8/NLT/ configs/example/se.py --cpu-type=DerivO3CPU --caches --l2cache --l1i_size=4MB --mem-size=8GB --cpu-clock=2GHz --sys-clock=2GHz -c tests/tca/sparse/blocksparse_accl_func8x8
+initialdir = /research/hzhuo2/gem5_test/gem5/
+output = /research/hzhuo2/gem5_test/gem5/m5out/sparse/8x8/NLT/condor_out_sparse2
+error = /research/hzhuo2/gem5_test/gem5/m5out/sparse/8x8/NLT/condor_err
+log = /research/hzhuo2/gem5_test/gem5/m5out/sparse/8x8/NLT/condor_log
+Rank=TARGET.Mips
+universe = vanilla
+getenv = true
+Requirements = (regexp("opteron-5.*", Machine)==FALSE)
+queue
+
+executable = /research/hzhuo2/gem5_test/gem5/build/X86/gem5_LNT.opt
+arguments = --outdir=m5out/sparse/8x8/LNT/ configs/example/se.py --cpu-type=DerivO3CPU --caches --l2cache --l1i_size=4MB --mem-size=8GB --cpu-clock=2GHz --sys-clock=2GHz -c tests/tca/sparse/blocksparse_accl_func8x8
+initialdir = /research/hzhuo2/gem5_test/gem5/
+output = /research/hzhuo2/gem5_test/gem5/m5out/sparse/8x8/LNT/condor_out_sparse2
+error = /research/hzhuo2/gem5_test/gem5/m5out/sparse/8x8/LNT/condor_err
+log = /research/hzhuo2/gem5_test/gem5/m5out/sparse/8x8/LNT/condor_log
+Rank=TARGET.Mips
+universe = vanilla
+getenv = true
+Requirements = (regexp("opteron-5.*", Machine)==FALSE)
+queue
+
+executable = /research/hzhuo2/gem5_test/gem5/build/X86/gem5_NLNT.opt
+arguments = --outdir=m5out/sparse/8x8/NLNT/ configs/example/se.py --cpu-type=DerivO3CPU --caches --l2cache --l1i_size=4MB --mem-size=8GB --cpu-clock=2GHz --sys-clock=2GHz -c tests/tca/sparse/blocksparse_accl_func8x8
+initialdir = /research/hzhuo2/gem5_test/gem5/
+output = /research/hzhuo2/gem5_test/gem5/m5out/sparse/8x8/NLNT/condor_out_sparse2
+error = /research/hzhuo2/gem5_test/gem5/m5out/sparse/8x8/NLNT/condor_err
+log = /research/hzhuo2/gem5_test/gem5/m5out/sparse/8x8/NLNT/condor_log
+Rank=TARGET.Mips
+universe = vanilla
+getenv = true
+Requirements = (regexp("opteron-5.*", Machine)==FALSE)
+queue
+
+

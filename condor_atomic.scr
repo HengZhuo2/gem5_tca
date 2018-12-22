@@ -1,0 +1,13 @@
+executable = /research/hzhuo2/gem5_test/gem5/build/X86/gem5.opt
+arguments = configs/example/se.py --cpu-type=AtomicSimpleCPU --caches --l2cache --l1i_size=4MB --mem-size=8GB --cpu-clock=2GHz --sys-clock=2GHz -c tests/tca/sparse/blocksparse 
+initialdir = /research/hzhuo2/gem5_test/gem5/
+output = /research/hzhuo2/gem5_test/gem5/m5out/condor_out_sparse
+error = /research/hzhuo2/gem5_test/gem5/m5out/condor_err
+log = /research/hzhuo2/gem5_test/gem5/m5out/condor_log
+Rank=TARGET.Mips
+universe = vanilla
+getenv = true
+Requirements = (regexp("opteron-5.*", Machine)==FALSE)
+queue
+
+

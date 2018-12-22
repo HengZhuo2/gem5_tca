@@ -1,0 +1,37 @@
+executable = /research/hzhuo2/gem5_test/gem5/build/X86/gem5_LT.opt
+arguments = --outdir=/research/hzhuo2/gem5_test/gem5/m5out/Atomic/mediawiki-1.26.2/oss/oss-small-no-scribunto/ --stats-file=stats_o3.txt --dump-config=config_o3.ini configs/example/fs.py --caches --l2cache --l1i_size=32kB --l1i_assoc=4 --kernel=/research/hzhuo2/diskimg/vmlinux_working --disk-image=/research/hzhuo2/diskimg/CentOS-x86_64_w_mw.img --script=/research/hzhuo2/gem5_test/gem5/configs/full_system/dibakar_boot/mw_dbcache_hhvm.rcS --cpu-type=DerivO3CPU -r 6
+initialdir = /research/hzhuo2/gem5_test/gem5/
+output = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/mediawiki-1.26.2/oss/oss-small-no-scribunto/condor_o3_out_2
+error = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/mediawiki-1.26.2/oss/oss-small-no-scribunto/condor_o3_err_2
+log = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/mediawiki-1.26.2/oss/oss-small-no-scribunto/condor_o3_log_2
+Rank=TARGET.Mips
+universe = vanilla
+getenv = true
+Requirements = (regexp("opteron-5.*", Machine)==FALSE)
+queue
+
+
+executable = /research/hzhuo2/gem5_test/gem5/build/X86/gem5_LT.opt
+arguments = --outdir=/research/hzhuo2/gem5_test/gem5/m5out/Atomic/mediawiki-1.26.2/oss/oss-medium-no-scribunto/ --stats-file=stats_o3.txt --dump-config=config_o3.ini configs/example/fs.py --caches --l2cache --l1i_size=32kB --l1i_assoc=4 --kernel=/research/hzhuo2/diskimg/vmlinux_working --disk-image=/research/hzhuo2/diskimg/CentOS-x86_64_w_mw.img --script=/research/hzhuo2/gem5_test/gem5/configs/full_system/dibakar_boot/mw_dbcache_uw-madison.rcS --cpu-type=DerivO3CPU -r 6
+initialdir = /research/hzhuo2/gem5_test/gem5/
+output = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/mediawiki-1.26.2/oss/oss-medium-no-scribunto/condor_o3_out_2
+error = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/mediawiki-1.26.2/oss/oss-medium-no-scribunto/condor_o3_err_2
+log = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/mediawiki-1.26.2/oss/oss-medium-no-scribunto/condor_o3_log_2
+Rank=TARGET.Mips
+universe = vanilla
+getenv = true
+Requirements = (regexp("opteron-5.*", Machine)==FALSE)
+queue
+
+
+executable = /research/hzhuo2/gem5_test/gem5/build/X86/gem5_LT.opt
+arguments = --outdir=/research/hzhuo2/gem5_test/gem5/m5out/Atomic/mediawiki-1.26.2/oss/oss-large-no-scribunto/ --stats-file=stats_o3.txt --dump-config=config_o3.ini configs/example/fs.py --caches --l2cache --l1i_size=32kB --l1i_assoc=4 --kernel=/research/hzhuo2/diskimg/vmlinux_working --disk-image=/research/hzhuo2/diskimg/CentOS-x86_64_w_mw.img --script=/research/hzhuo2/gem5_test/gem5/configs/full_system/dibakar_boot/mw_dbcache_barack-obama.rcS --cpu-type=DerivO3CPU -r 6
+initialdir = /research/hzhuo2/gem5_test/gem5/
+output = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/mediawiki-1.26.2/oss/oss-large-no-scribunto/condor_o3_out_2
+error = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/mediawiki-1.26.2/oss/oss-large-no-scribunto/condor_o3_err_2
+log = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/mediawiki-1.26.2/oss/oss-large-no-scribunto/condor_o3_log_2
+Rank=TARGET.Mips
+universe = vanilla
+getenv = true
+Requirements = (regexp("opteron-5.*", Machine)==FALSE)
+queue

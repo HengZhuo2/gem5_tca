@@ -1,0 +1,11 @@
+executable = /research/hzhuo2/gem5_test/gem5/build/X86/gem5.opt
+arguments = --outdir=/research/hzhuo2/gem5_test/gem5/m5out/mediawiki-1.26.2/oss/oss-medium-no-scribunto/ --stats-file=stats_debug.txt --dump-config=config_debug.ini configs/example/fs.py --caches --l2cache --l1i_size=32kB --l1i_assoc=4 --kernel=/research/hzhuo2/diskimg/vmlinux_working --disk-image=/research/hzhuo2/diskimg/CentOS-x86_64_w_mw.img --script=/research/hzhuo2/gem5_test/gem5/configs/full_system/dibakar_boot/mw_dbcache_uw-madison.rcS --cpu-type=DerivO3CPU --checkpoint-dir=/research/hzhuo2/gem5_test/gem5/m5out/mediawiki-1.26.2/oss/oss-medium-no-scribunto/ -r 6 --standard-switch=7995000000000 --take-checkpoints=<93850000000000,10000000000>
+initialdir = /research/hzhuo2/gem5_test/gem5/
+output = /research/hzhuo2/gem5_test/gem5/m5out/mediawiki-1.26.2/oss/oss-medium-no-scribunto/condor_out_test0
+error = /research/hzhuo2/gem5_test/gem5/m5out/mediawiki-1.26.2/oss/oss-medium-no-scribunto/condor_err_test0
+log = /research/hzhuo2/gem5_test/gem5/m5out/mediawiki-1.26.2/oss/oss-medium-no-scribunto/condor_log_test0
+Rank=TARGET.Mips
+universe = vanilla
+getenv = true
+Requirements = (regexp("opteron-5.*", Machine)==FALSE)
+queue

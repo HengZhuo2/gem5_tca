@@ -1,0 +1,51 @@
+panic: X86 decoder internal error: 'Three byte opcode shouldn't be handled by two_byte_opcodes.isa!' 
+{
+	leg = 0x10,
+	rex = 0x4,
+	vex/xop = 0x35,
+	op = {
+		type = two byte,
+		op = 0x3a,
+		},
+	modRM = 0,
+	sib = 0,
+	immediate = 0,
+	displacement = 0
+	dispSize = 0}
+Memory Usage: 6017788 KBytes
+Program aborted at tick 12080181030500
+--- BEGIN LIBC BACKTRACE ---
+build/X86/gem5_LT.opt(_Z15print_backtracev+0x28)[0x14ec468]
+build/X86/gem5_LT.opt(_Z12abortHandleri+0x46)[0x14fefe6]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x11390)[0x7fae466d4390]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0x38)[0x7fae4534d428]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x16a)[0x7fae4534f02a]
+build/X86/gem5_LT.opt[0x71d94f]
+build/X86/gem5_LT.opt(_ZN6X86ISA7Decoder10decodeInstENS_11ExtMachInstE+0x3245)[0xab6285]
+build/X86/gem5_LT.opt(_ZN6X86ISA7Decoder6decodeENS_11ExtMachInstEm+0x135)[0xa828c5]
+build/X86/gem5_LT.opt(_ZN6X86ISA7Decoder6decodeERNS_7PCStateE+0x1d4)[0xa82be4]
+build/X86/gem5_LT.opt(_ZN12DefaultFetchI9O3CPUImplE5fetchERb+0x68a)[0x7f9f3a]
+build/X86/gem5_LT.opt(_ZN12DefaultFetchI9O3CPUImplE4tickEv+0xbc)[0x7fb52c]
+build/X86/gem5_LT.opt(_ZN9FullO3CPUI9O3CPUImplE4tickEv+0x10f)[0x7d9b7f]
+build/X86/gem5_LT.opt(_ZN10EventQueue10serviceOneEv+0xc5)[0x14f2c55]
+build/X86/gem5_LT.opt(_Z9doSimLoopP10EventQueue+0x50)[0x150ace0]
+build/X86/gem5_LT.opt(_Z8simulatem+0xd1b)[0x150bdcb]
+build/X86/gem5_LT.opt[0x9bef6a]
+build/X86/gem5_LT.opt[0x99dab7]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x7852)[0x7fae46991762]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x85c)[0x7fae46ac804c]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6ffd)[0x7fae46990f0d]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x85c)[0x7fae46ac804c]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6ffd)[0x7fae46990f0d]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x85c)[0x7fae46ac804c]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6ffd)[0x7fae46990f0d]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x85c)[0x7fae46ac804c]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyEval_EvalCode+0x19)[0x7fae46989d99]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x613b)[0x7fae4699004b]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x85c)[0x7fae46ac804c]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyEval_EvalFrameEx+0x6ffd)[0x7fae46990f0d]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyEval_EvalCodeEx+0x85c)[0x7fae46ac804c]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyEval_EvalCode+0x19)[0x7fae46989d99]
+/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0(PyRun_StringFlags+0x76)[0x7fae46a041e6]
+--- END LIBC BACKTRACE ---
+Aborted

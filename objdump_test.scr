@@ -1,0 +1,11 @@
+executable = /research/hzhuo2/gem5_test/gem5/build/X86/gem5_LT.opt
+arguments = --outdir=/research/hzhuo2/gem5_test/gem5/m5out/objdump/ --stats-file=stats_o3.txt --dump-config=config_o3.ini configs/example/fs.py --caches --l2cache --l1i_size=32kB --l1i_assoc=4 --kernel=/research/hzhuo2/diskimg/vmlinux_working --disk-image=/research/hzhuo2/diskimg/CentOS-x86_64_w_drupal.img --script=/research/hzhuo2/gem5_test/gem5/configs/full_system/objdump_hhvm.rcS
+initialdir = /research/hzhuo2/gem5_test/gem5/
+output = /research/hzhuo2/gem5_test/gem5/m5out/objdump/condor_out
+error = /research/hzhuo2/gem5_test/gem5/m5out/objdump/condor_err
+log = /research/hzhuo2/gem5_test/gem5/m5out/objdump/condor_log
+Rank=TARGET.Mips
+universe = vanilla
+getenv = true
+Requirements = (regexp("opteron-5.*", Machine)==FALSE)
+queue

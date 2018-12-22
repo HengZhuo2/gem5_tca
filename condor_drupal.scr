@@ -1,0 +1,72 @@
+executable = /research/hzhuo2/gem5_test/gem5/build/X86/gem5_LT.opt
+arguments = --outdir=/research/hzhuo2/gem5_test/gem5/m5out/Atomic/drupal-7.31/oss/index/ --stats-file=stats_o3.txt --dump-config=config_o3.ini configs/example/fs.py --caches --l2cache --l1i_size=32kB --l1i_assoc=4 --kernel=/research/hzhuo2/diskimg/vmlinux_working --disk-image=/research/hzhuo2/diskimg/CentOS-x86_64_w_drupal.img --script=/research/hzhuo2/gem5_test/gem5/configs/full_system/dibakar_boot/drupal7_no_dbcache_index.rcS --cpu-type=DerivO3CPU -r 8
+initialdir = /research/hzhuo2/gem5_test/gem5/
+output = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/drupal-7.31/oss/index/condor_out_2
+error = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/drupal-7.31/oss/index/condor_err_2
+log = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/drupal-7.31/oss/index/condor_log_2
+Rank=TARGET.Mips
+universe = vanilla
+getenv = true
+Requirements = (regexp("opteron-5.*", Machine)==FALSE)
+queue
+
+executable = /research/hzhuo2/gem5_test/gem5/build/X86/gem5_LT.opt
+arguments = --outdir=/research/hzhuo2/gem5_test/gem5/m5out/Atomic/drupal-7.31/oss/index_node_6/ --stats-file=stats_o3.txt --dump-config=config_o3.ini configs/example/fs.py --caches --l2cache --l1i_size=32kB --l1i_assoc=4 --kernel=/research/hzhuo2/diskimg/vmlinux_working --disk-image=/research/hzhuo2/diskimg/CentOS-x86_64_w_drupal.img --script=/research/hzhuo2/gem5_test/gem5/configs/full_system/dibakar_boot/drupal7_no_dbcache_index_node_6.rcS --cpu-type=DerivO3CPU -r 8
+initialdir = /research/hzhuo2/gem5_test/gem5/
+output = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/drupal-7.31/oss/index_node_6/condor_out_2
+error = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/drupal-7.31/oss/index_node_6/condor_err_2
+log = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/drupal-7.31/oss/index_node_6/condor_log_2
+Rank=TARGET.Mips
+universe = vanilla
+getenv = true
+Requirements = (regexp("opteron-5.*", Machine)==FALSE)
+queue
+
+executable = /research/hzhuo2/gem5_test/gem5/build/X86/gem5_LT.opt
+arguments = --outdir=/research/hzhuo2/gem5_test/gem5/m5out/Atomic/drupal-7.31/oss/index_node_11/ --stats-file=stats_o3.txt --dump-config=config_o3.ini configs/example/fs.py --caches --l2cache --l1i_size=32kB --l1i_assoc=4 --kernel=/research/hzhuo2/diskimg/vmlinux_working --disk-image=/research/hzhuo2/diskimg/CentOS-x86_64_w_drupal.img --script=/research/hzhuo2/gem5_test/gem5/configs/full_system/dibakar_boot/drupal7_no_dbcache_index_node_11.rcS --cpu-type=DerivO3CPU -r 8
+initialdir = /research/hzhuo2/gem5_test/gem5/
+output = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/drupal-7.31/oss/index_node_11/condor_out_2
+error = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/drupal-7.31/oss/index_node_11/condor_err_2
+log = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/drupal-7.31/oss/index_node_11/condor_log_2
+Rank=TARGET.Mips
+universe = vanilla
+getenv = true
+Requirements = (regexp("opteron-5.*", Machine)==FALSE)
+queue
+
+executable = /research/hzhuo2/gem5_test/gem5/build/X86/gem5_LT.opt
+arguments = --outdir=/research/hzhuo2/gem5_test/gem5/m5out/Atomic/drupal-7.31/oss/index_node_24/ --stats-file=stats_o3.txt --dump-config=config_o3.ini configs/example/fs.py --caches --l2cache --l1i_size=32kB --l1i_assoc=4 --kernel=/research/hzhuo2/diskimg/vmlinux_working --disk-image=/research/hzhuo2/diskimg/CentOS-x86_64_w_drupal.img --script=/research/hzhuo2/gem5_test/gem5/configs/full_system/dibakar_boot/drupal7_no_dbcache_index_node_24.rcS --cpu-type=DerivO3CPU -r 8
+initialdir = /research/hzhuo2/gem5_test/gem5/
+output = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/drupal-7.31/oss/index_node_24/condor_out_2
+error = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/drupal-7.31/oss/index_node_24/condor_err_2
+log = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/drupal-7.31/oss/index_node_24/condor_log_2
+Rank=TARGET.Mips
+universe = vanilla
+getenv = true
+Requirements = (regexp("opteron-5.*", Machine)==FALSE)
+queue
+
+executable = /research/hzhuo2/gem5_test/gem5/build/X86/gem5_LT.opt
+arguments = --outdir=/research/hzhuo2/gem5_test/gem5/m5out/Atomic/drupal-7.31/oss/index_node_30/ --stats-file=stats_o3.txt --dump-config=config_o3.ini configs/example/fs.py --caches --l2cache --l1i_size=32kB --l1i_assoc=4 --kernel=/research/hzhuo2/diskimg/vmlinux_working --disk-image=/research/hzhuo2/diskimg/CentOS-x86_64_w_drupal.img --script=/research/hzhuo2/gem5_test/gem5/configs/full_system/dibakar_boot/drupal7_no_dbcache_index_node_30.rcS --cpu-type=DerivO3CPU -r 8
+initialdir = /research/hzhuo2/gem5_test/gem5/
+output = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/drupal-7.31/oss/index_node_30/condor_out_2
+error = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/drupal-7.31/oss/index_node_30/condor_err_2
+log = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/drupal-7.31/oss/index_node_30/condor_log_2
+Rank=TARGET.Mips
+universe = vanilla
+getenv = true
+Requirements = (regexp("opteron-5.*", Machine)==FALSE)
+queue
+
+executable = /research/hzhuo2/gem5_test/gem5/build/X86/gem5_LT.opt
+arguments = --outdir=/research/hzhuo2/gem5_test/gem5/m5out/Atomic/drupal-7.31/oss/index_node_37/ --stats-file=stats_o3.txt --dump-config=config_o3.ini configs/example/fs.py --caches --l2cache --l1i_size=32kB --l1i_assoc=4 --kernel=/research/hzhuo2/diskimg/vmlinux_working --disk-image=/research/hzhuo2/diskimg/CentOS-x86_64_w_drupal.img --script=/research/hzhuo2/gem5_test/gem5/configs/full_system/dibakar_boot/drupal7_no_dbcache_index_node_37.rcS --cpu-type=DerivO3CPU -r 8
+initialdir = /research/hzhuo2/gem5_test/gem5/
+output = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/drupal-7.31/oss/index_node_37/condor_out_2
+error = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/drupal-7.31/oss/index_node_37/condor_err_2
+log = /research/hzhuo2/gem5_test/gem5/m5out/Atomic/drupal-7.31/oss/index_node_37/condor_log_2
+Rank=TARGET.Mips
+universe = vanilla
+getenv = true
+Requirements = (regexp("opteron-5.*", Machine)==FALSE)
+queue
+

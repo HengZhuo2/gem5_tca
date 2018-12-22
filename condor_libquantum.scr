@@ -1,0 +1,11 @@
+executable = /research/hzhuo2/gem5_test/gem5/build/X86/gem5_LT.opt
+arguments = --outdir=/research/hzhuo2/gem5_test/gem5/m5out/libquantum/ configs/example/fs.py --caches --l2cache --l1i_size=32kB --l1i_assoc=4 --kernel=/research/hzhuo2/diskimg/vmlinux_working --disk-image=/research/hzhuo2/diskimg/CentOS-x86_64_w_rubbos.img --script=/research/hzhuo2/gem5_test/gem5/configs/full_system/dibakar_boot/libquantum.rcS --cpu-type=TimingSimpleCPU
+initialdir = /research/hzhuo2/gem5_test/gem5/
+output = /research/hzhuo2/gem5_test/gem5/m5out/libquantum/condor_out
+error = /research/hzhuo2/gem5_test/gem5/m5out/libquantum/condor_err
+log = /research/hzhuo2/gem5_test/gem5/m5out/libquantum/condor_log
+Rank=TARGET.Mips
+universe = vanilla
+getenv = true
+Requirements = (regexp("opteron-5.*", Machine)==FALSE)
+queue

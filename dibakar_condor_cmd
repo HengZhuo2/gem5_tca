@@ -1,0 +1,132 @@
+
+executable = /research/dibakar/gem5_dynlib_OoO/gem5/build/X86/gem5_OoO8.opt
+arguments = --outdir=/research/dibakar/gem5_dynlib/gem5/m5out/libquantum/ --stats-file=stats.txt.btb4k_icache32kB_assoc4_OoO8 --json-config=config.json.btb4k_icache32kB_assoc4_OoO8 configs/example/fs.py --caches --l2cache --l1i_size=32kB --l1i_assoc=4 --kernel=/research/dibakar/gem5/linux-2.6.32-431.5.1.el6/vmlinux_working --disk-image=/research/dibakar/gem5/disks/CentOS-x86_64_w_rubbos.img --script=/research/dibakar/gem5_dynlib/gem5/configs/boot/libquantum.rcS --cpu-type=detailed -r 1
+initialdir = /research/dibakar/gem5_dynlib_OoO/gem5/
+output = /research/dibakar/gem5_dynlib/gem5/m5out/libquantum/condor_out
+error = /research/dibakar/gem5_dynlib/gem5/m5out/libquantum/condor_err
+log = /research/dibakar/gem5_dynlib/gem5/m5out/libquantum/condor_log
+Rank=TARGET.Mips
+universe = vanilla
+getenv = true
+Requirements = (regexp("opteron-5.*", Machine)==FALSE)
+queue
+
+executable = /research/dibakar/gem5_dynlib_OoO/gem5/build/X86/gem5_OoO8.opt
+arguments = --outdir=/research/dibakar/gem5_dynlib/gem5/m5out/mediawiki-1.26.2/oss/oss-small-no-scribunto/ --stats-file=stats.txt.btb4k_icache32kB_assoc4_OoO8 --json-config=config.json.btb4k_icache32kB_assoc4_OoO8 configs/example/fs.py --caches --l2cache --l1i_size=32kB --l1i_assoc=4 --kernel=/research/dibakar/gem5/linux-2.6.32-431.5.1.el6/vmlinux_working --disk-image=/research/dibakar/gem5/disks/CentOS-x86_64_w_mw.img --script=/research/dibakar/gem5_dynlib/gem5/configs/boot/mw_dbcache_hhvm.rcS --cpu-type=detailed -r 6
+initialdir = /research/dibakar/gem5_dynlib_OoO/gem5/
+output = /research/dibakar/gem5_dynlib/gem5/m5out/mediawiki-1.26.2/oss/oss-small-no-scribunto/condor_out
+error = /research/dibakar/gem5_dynlib/gem5/m5out/mediawiki-1.26.2/oss/oss-small-no-scribunto/condor_err
+log = /research/dibakar/gem5_dynlib/gem5/m5out/mediawiki-1.26.2/oss/oss-small-no-scribunto/condor_log
+Rank=TARGET.Mips
+universe = vanilla
+getenv = true
+Requirements = (regexp("opteron-5.*", Machine)==FALSE)
+queue
+
+executable = /research/dibakar/gem5_dynlib_OoO/gem5/build/X86/gem5_OoO8.opt
+arguments = --outdir=/research/dibakar/gem5_dynlib/gem5/m5out/mediawiki-1.26.2/oss/oss-medium-no-scribunto/ --stats-file=stats.txt.btb4k_icache32kB_assoc4_OoO8 --json-config=config.json.btb4k_icache32kB_assoc4_OoO8 configs/example/fs.py --caches --l2cache --l1i_size=32kB --l1i_assoc=4 --kernel=/research/dibakar/gem5/linux-2.6.32-431.5.1.el6/vmlinux_working --disk-image=/research/dibakar/gem5/disks/CentOS-x86_64_w_mw.img --script=/research/dibakar/gem5_dynlib/gem5/configs/boot/mw_dbcache_uw-madison.rcS --cpu-type=detailed -r 6
+initialdir = /research/dibakar/gem5_dynlib_OoO/gem5/
+output = /research/dibakar/gem5_dynlib/gem5/m5out/mediawiki-1.26.2/oss/oss-medium-no-scribunto/condor_out
+error = /research/dibakar/gem5_dynlib/gem5/m5out/mediawiki-1.26.2/oss/oss-medium-no-scribunto/condor_err
+log = /research/dibakar/gem5_dynlib/gem5/m5out/mediawiki-1.26.2/oss/oss-medium-no-scribunto/condor_log
+Rank=TARGET.Mips
+universe = vanilla
+getenv = true
+Requirements = (regexp("opteron-5.*", Machine)==FALSE)
+queue
+
+executable = /research/dibakar/gem5_dynlib_OoO/gem5/build/X86/gem5_OoO8.opt
+arguments = --outdir=/research/dibakar/gem5_dynlib/gem5/m5out/mediawiki-1.26.2/oss/oss-large-no-scribunto/ --stats-file=stats.txt.btb4k_icache32kB_assoc4_OoO8 --json-config=config.json.btb4k_icache32kB_assoc4_OoO8 configs/example/fs.py --caches --l2cache --l1i_size=32kB --l1i_assoc=4 --kernel=/research/dibakar/gem5/linux-2.6.32-431.5.1.el6/vmlinux_working --disk-image=/research/dibakar/gem5/disks/CentOS-x86_64_w_mw.img --script=/research/dibakar/gem5_dynlib/gem5/configs/boot/mw_dbcache_barack-obama.rcS --cpu-type=detailed -r 6
+initialdir = /research/dibakar/gem5_dynlib_OoO/gem5/
+output = /research/dibakar/gem5_dynlib/gem5/m5out/mediawiki-1.26.2/oss/oss-large-no-scribunto/condor_out
+error = /research/dibakar/gem5_dynlib/gem5/m5out/mediawiki-1.26.2/oss/oss-large-no-scribunto/condor_err
+log = /research/dibakar/gem5_dynlib/gem5/m5out/mediawiki-1.26.2/oss/oss-large-no-scribunto/condor_log
+Rank=TARGET.Mips
+universe = vanilla
+getenv = true
+Requirements = (regexp("opteron-5.*", Machine)==FALSE)
+queue
+
+executable = /research/dibakar/gem5_dynlib_OoO/gem5/build/X86/gem5_OoO8.opt
+arguments = --outdir=/research/dibakar/gem5_dynlib/gem5/m5out/drupal-7.31/oss/index/ --stats-file=stats.txt.btb4k_icache32kB_assoc4_OoO8 --json-config=config.json.btb4k_icache32kB_assoc4_OoO8 configs/example/fs.py --caches --l2cache --l1i_size=32kB --l1i_assoc=4 --kernel=/research/dibakar/gem5/linux-2.6.32-431.5.1.el6/vmlinux_working --disk-image=/research/dibakar/gem5/disks/CentOS-x86_64_w_drupal.img --script=/research/dibakar/gem5_dynlib/gem5/configs/boot/drupal7_no_dbcache_index.rcS --cpu-type=detailed -r 8
+initialdir = /research/dibakar/gem5_dynlib_OoO/gem5/
+output = /research/dibakar/gem5_dynlib/gem5/m5out/drupal-7.31/oss/index/condor_out
+error = /research/dibakar/gem5_dynlib/gem5/m5out/drupal-7.31/oss/index/condor_err
+log = /research/dibakar/gem5_dynlib/gem5/m5out/drupal-7.31/oss/index/condor_log
+Rank=TARGET.Mips
+universe = vanilla
+getenv = true
+Requirements = (regexp("opteron-5.*", Machine)==FALSE)
+queue
+
+executable = /research/dibakar/gem5_dynlib_OoO/gem5/build/X86/gem5_OoO8.opt
+arguments = --outdir=/research/dibakar/gem5_dynlib/gem5/m5out/drupal-7.31/oss/index_node_11/ --stats-file=stats.txt.btb4k_icache32kB_assoc4_OoO8 --json-config=config.json.btb4k_icache32kB_assoc4_OoO8 configs/example/fs.py --caches --l2cache --l1i_size=32kB --l1i_assoc=4 --kernel=/research/dibakar/gem5/linux-2.6.32-431.5.1.el6/vmlinux_working --disk-image=/research/dibakar/gem5/disks/CentOS-x86_64_w_drupal.img --script=/research/dibakar/gem5_dynlib/gem5/configs/boot/drupal7_no_dbcache_index_node_11.rcS --cpu-type=detailed -r 8
+initialdir = /research/dibakar/gem5_dynlib_OoO/gem5/
+output = /research/dibakar/gem5_dynlib/gem5/m5out/drupal-7.31/oss/index_node_11/condor_out
+error = /research/dibakar/gem5_dynlib/gem5/m5out/drupal-7.31/oss/index_node_11/condor_err
+log = /research/dibakar/gem5_dynlib/gem5/m5out/drupal-7.31/oss/index_node_11/condor_log
+Rank=TARGET.Mips
+universe = vanilla
+getenv = true
+Requirements = (regexp("opteron-5.*", Machine)==FALSE)
+queue
+
+executable = /research/dibakar/gem5_dynlib_OoO/gem5/build/X86/gem5_OoO8.opt
+arguments = --outdir=/research/dibakar/gem5_dynlib/gem5/m5out/drupal-7.31/oss/index_node_24/ --stats-file=stats.txt.btb4k_icache32kB_assoc4_OoO8 --json-config=config.json.btb4k_icache32kB_assoc4_OoO8 configs/example/fs.py --caches --l2cache --l1i_size=32kB --l1i_assoc=4 --kernel=/research/dibakar/gem5/linux-2.6.32-431.5.1.el6/vmlinux_working --disk-image=/research/dibakar/gem5/disks/CentOS-x86_64_w_drupal.img --script=/research/dibakar/gem5_dynlib/gem5/configs/boot/drupal7_no_dbcache_index_node_24.rcS --cpu-type=detailed -r 8
+initialdir = /research/dibakar/gem5_dynlib_OoO/gem5/
+output = /research/dibakar/gem5_dynlib/gem5/m5out/drupal-7.31/oss/index_node_24/condor_out
+error = /research/dibakar/gem5_dynlib/gem5/m5out/drupal-7.31/oss/index_node_24/condor_err
+log = /research/dibakar/gem5_dynlib/gem5/m5out/drupal-7.31/oss/index_node_24/condor_log
+Rank=TARGET.Mips
+universe = vanilla
+getenv = true
+Requirements = (regexp("opteron-5.*", Machine)==FALSE)
+queue
+
+executable = /research/dibakar/gem5_dynlib_OoO/gem5/build/X86/gem5_OoO8.opt
+arguments = --outdir=/research/dibakar/gem5_dynlib/gem5/m5out/wordpress/oss/dbcache_fp_body_plus_dbms/ --stats-file=stats.txt.btb4k_icache32kB_assoc4_OoO8 --json-config=config.json.btb4k_icache32kB_assoc4_OoO8 configs/example/fs.py --caches --l2cache --l1i_size=32kB --l1i_assoc=4 --kernel=/research/dibakar/gem5/linux-2.6.32-431.5.1.el6/vmlinux_working --disk-image=/research/dibakar/gem5/disks/CentOS-x86_64_w_wp.img --script=/research/dibakar/gem5_dynlib/gem5/configs/boot/wp_dbcache_fp_body_plus_dbms.rcS --cpu-type=detailed -r 8
+initialdir = /research/dibakar/gem5_dynlib_OoO/gem5/
+output = /research/dibakar/gem5_dynlib/gem5/m5out/wordpress/oss/dbcache_fp_body_plus_dbms/condor_out
+error = /research/dibakar/gem5_dynlib/gem5/m5out/wordpress/oss/dbcache_fp_body_plus_dbms/condor_err
+log = /research/dibakar/gem5_dynlib/gem5/m5out/wordpress/oss/dbcache_fp_body_plus_dbms/condor_log
+Rank=TARGET.Mips
+universe = vanilla
+getenv = true
+Requirements = (regexp("opteron-5.*", Machine)==FALSE)
+queue
+
+executable = /research/dibakar/gem5_dynlib_OoO/gem5/build/X86/gem5_OoO8.opt
+arguments = --outdir=/research/dibakar/gem5_dynlib/gem5/m5out/wordpress/oss/dbcache_p5_body_plus_dbms/ --stats-file=stats.txt.btb4k_icache32kB_assoc4_OoO8 --json-config=config.json.btb4k_icache32kB_assoc4_OoO8 configs/example/fs.py --caches --l2cache --l1i_size=32kB --l1i_assoc=4 --kernel=/research/dibakar/gem5/linux-2.6.32-431.5.1.el6/vmlinux_working --disk-image=/research/dibakar/gem5/disks/CentOS-x86_64_w_wp.img --script=/research/dibakar/gem5_dynlib/gem5/configs/boot/wp_dbcache_p5_body_plus_dbms.rcS --cpu-type=detailed -r 8
+initialdir = /research/dibakar/gem5_dynlib_OoO/gem5/
+output = /research/dibakar/gem5_dynlib/gem5/m5out/wordpress/oss/dbcache_p5_body_plus_dbms/condor_out
+error = /research/dibakar/gem5_dynlib/gem5/m5out/wordpress/oss/dbcache_p5_body_plus_dbms/condor_err
+log = /research/dibakar/gem5_dynlib/gem5/m5out/wordpress/oss/dbcache_p5_body_plus_dbms/condor_log
+Rank=TARGET.Mips
+universe = vanilla
+getenv = true
+Requirements = (regexp("opteron-5.*", Machine)==FALSE)
+queue
+
+executable = /research/dibakar/gem5_dynlib_OoO/gem5/build/X86/gem5_OoO8.opt
+arguments = --outdir=/research/dibakar/gem5_dynlib/gem5/m5out/wordpress/oss/dbcache_p7_body_plus_dbms/ --stats-file=stats.txt.btb4k_icache32kB_assoc4_OoO8 --json-config=config.json.btb4k_icache32kB_assoc4_OoO8 configs/example/fs.py --caches --l2cache --l1i_size=32kB --l1i_assoc=4 --kernel=/research/dibakar/gem5/linux-2.6.32-431.5.1.el6/vmlinux_working --disk-image=/research/dibakar/gem5/disks/CentOS-x86_64_w_wp.img --script=/research/dibakar/gem5_dynlib/gem5/configs/boot/wp_dbcache_p7_body_plus_dbms.rcS --cpu-type=detailed -r 8
+initialdir = /research/dibakar/gem5_dynlib_OoO/gem5/
+output = /research/dibakar/gem5_dynlib/gem5/m5out/wordpress/oss/dbcache_p7_body_plus_dbms/condor_out
+error = /research/dibakar/gem5_dynlib/gem5/m5out/wordpress/oss/dbcache_p7_body_plus_dbms/condor_err
+log = /research/dibakar/gem5_dynlib/gem5/m5out/wordpress/oss/dbcache_p7_body_plus_dbms/condor_log
+Rank=TARGET.Mips
+universe = vanilla
+getenv = true
+Requirements = (regexp("opteron-5.*", Machine)==FALSE)
+queue
+
+executable = /research/dibakar/gem5_dynlib_OoO/gem5/build/X86/gem5_OoO8.opt
+arguments = --outdir=/research/dibakar/gem5_dynlib/gem5/m5out/wordpress/oss/dbcache_p11_body_plus_dbms/ --stats-file=stats.txt.btb4k_icache32kB_assoc4_OoO8 --json-config=config.json.btb4k_icache32kB_assoc4_OoO8 configs/example/fs.py --caches --l2cache --l1i_size=32kB --l1i_assoc=4 --kernel=/research/dibakar/gem5/linux-2.6.32-431.5.1.el6/vmlinux_working --disk-image=/research/dibakar/gem5/disks/CentOS-x86_64_w_wp.img --script=/research/dibakar/gem5_dynlib/gem5/configs/boot/wp_dbcache_p11_body_plus_dbms.rcS --cpu-type=detailed -r 8
+initialdir = /research/dibakar/gem5_dynlib_OoO/gem5/
+output = /research/dibakar/gem5_dynlib/gem5/m5out/wordpress/oss/dbcache_p11_body_plus_dbms/condor_out
+error = /research/dibakar/gem5_dynlib/gem5/m5out/wordpress/oss/dbcache_p11_body_plus_dbms/condor_err
+log = /research/dibakar/gem5_dynlib/gem5/m5out/wordpress/oss/dbcache_p11_body_plus_dbms/condor_log
+Rank=TARGET.Mips
+universe = vanilla
+getenv = true
+Requirements = (regexp("opteron-5.*", Machine)==FALSE)
+queue

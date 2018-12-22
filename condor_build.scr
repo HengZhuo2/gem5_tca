@@ -1,0 +1,12 @@
+executable = /research/hzhuo2/gem5_test/gem5/scons
+arguments = build/X86/
+initialdir = /research/hzhuo2/gem5_test/gem5/
+output = /research/hzhuo2/gem5_test/gem5/m5out/condor_out
+error = /research/hzhuo2/gem5_test/gem5/m5out/condor_err
+log = /research/hzhuo2/gem5_test/gem5/m5out/condor_log
+Rank=TARGET.Mips
+universe = vanilla
+getenv = true
+Requirements = (regexp("opteron-5.*", Machine)==FALSE)
+queue
+

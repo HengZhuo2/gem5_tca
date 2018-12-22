@@ -1,0 +1,16 @@
+/sbin/m5 dumpstats
+/sbin/m5 resetstats
+
+cd /work/workloads/spec_cpu2006/benchspec/CPU2006/462.libquantum/src/
+./trivial_main 15 2
+
+/sbin/m5 dumpstats
+/sbin/m5 resetstats
+
+./trivial_main 15 2
+
+/sbin/m5 dumpstats
+/sbin/m5 resetstats
+
+/sbin/m5 exit
+/sbin/m5 exit

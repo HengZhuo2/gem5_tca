@@ -568,7 +568,7 @@ class BaseDynInst : public ExecContext, public RefCounted
     { 
       status.set(Accl); 
       // status.set(AcclNonSpeculative);//L flag, when set, its NL
-      status.set(AcclSerialize); //T flag, when set, its NT
+      // status.set(AcclSerialize); //T flag, when set, its NT
     }
 
     void setMyldf() 
@@ -579,7 +579,7 @@ class BaseDynInst : public ExecContext, public RefCounted
     void setMystl() 
     {
       status.set(Accl); 
-      status.set(AcclSerialize); //T flag, when set, its NT
+      // status.set(AcclSerialize); //T flag, when set, its NT
     }
 
 
